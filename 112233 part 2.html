@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>part 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Georgia", serif;
+            background-color: #fcf8f2;
+            color: #5a2d0c;
+            text-align: center;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+
+        header {
+            background-color: #d2691e;
+            padding: 1.5rem;
+            color: #fff;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px #5a2d0c;
+        }
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            padding: 2rem;
+        }
+
+        .container img {
+            width: 70%;
+            max-width: 200px;
+            border: 8px solid #d2691e;
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .container p {
+            margin: 1.5rem 0;
+            font-size: 1.3rem;
+            color: #8b4513;
+            font-style: italic;
+        }
+
+        p1 {
+            color: #00000055;
+            line-height: 1.1;
+            font-size: 1.1em;
+            margin: 6px 0;
+        }
+
+        footer {
+            background-color: #d2691e;
+            color: #fff;
+            padding: 1rem;
+            font-size: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            text-shadow: 1px 1px 2px #5a2d0c;
+        }
+
+        .leaf {
+            position: absolute;
+            top: -10%;
+            width: 50px;
+            animation: fall linear infinite;
+            opacity: 0.8;
+        }
+
+        .leaf:nth-child(1) {
+            left: 10%;
+            animation-duration: 12s;
+            animation-delay: 0s;
+        }
+        .leaf:nth-child(2) {
+            left: 20%;
+            animation-duration: 15s;
+            animation-delay: 2s;
+        }
+        .leaf:nth-child(3) {
+            right: 70%;
+            animation-duration: 10s;
+            animation-delay: 4s;
+        }
+        .leaf:nth-child(4) {
+            right: 80%;
+            animation-duration: 13s;
+            animation-delay: 1s;
+        }
+        .leaf:nth-child(5) {
+            left: 70%;
+            animation-duration: 11s;
+            animation-delay: 3s;
+        }
+        .leaf:nth-child(6) {
+            left: 80%;
+            animation-duration: 12s;
+            animation-delay: 2s;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Di tunggu yaa cinta!!
+    </header>
+
+    <div class="container">
+        <p>Telimakaci Pottys.</p>
+        <img src="makaci part 2/sticker1.jpg" alt="Makasi">
+        <p>あなたがいつも健康で、神のご加護がありますように、そして良い一日をお過ごしください。</p>
+        <p1>Anata ga itsumo kenkōde,-shin no go kago ga arimasu yō ni, soshite yoiichinichiwo osugoshi kudasai.</p1>
+    </div>
+    
+    <img src="makaci part 2/s2.jpeg" class="leaf" alt="leaf">
+    <img src="makaci part 2/s3.jpeg" class="leaf" alt="leaf">
+    <img src="makaci part 2/s4.jpeg" class="leaf" alt="leaf">
+    <img src="makaci part 2/s5.jpeg" class="leaf" alt="leaf">
+
+    <footer>
+        ___________________________________________________
+    </footer>
+</body>
+</html>
